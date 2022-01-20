@@ -44,6 +44,22 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle_Holder -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle_Holder">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Appliance"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister">
@@ -54,6 +70,38 @@
                 <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CylinderShape"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Air_Vent -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Air_Vent">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Outlet_Port -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Outlet_Port">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Clamps -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Clamps">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Drain_Tray -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Drain_Tray">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
     </owl:Class>
     
 
@@ -70,6 +118,187 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#MedicalCanister">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Air_Vent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Canister_Outlet_Port"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Needle_with_Filter -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Needle_with_Filter">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Plug -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Plug">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Pump -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Pump">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedTool"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Pump_Head"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Pump_Head -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Pump_Head">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Red_Plug -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Red_Plug">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Plug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rine_Fluid_k -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rine_Fluid_k">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rins_Fluid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rins_Fluid -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rins_Fluid">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Fluid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_Fluid_a -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_Fluid_a">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rins_Fluid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_fluid_a_Bottle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_fluid_a_Bottle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_fluid_k_Bottle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Rinse_fluid_k_Bottle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#SampleFluid -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#SampleFluid">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Fluid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Septum -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Septum">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Soy_Broth -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Soy_Broth">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Fluid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Soy_Broth_Bottle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Soy_Broth_Bottle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Bottle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Steri-Test_Kit -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Steri-Test_Kit">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedTool"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Clamps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Drain_Tray"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Needle_with_Filter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Red_Plug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Septum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Yellow_Plug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#SterilityTestCanister"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -105,6 +334,14 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#TransparentColor">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ColorRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Yellow_Plug -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Yellow_Plug">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-TRACEBOT.owl#Plug"/>
     </owl:Class>
 </rdf:RDF>
 
